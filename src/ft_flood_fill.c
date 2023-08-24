@@ -31,8 +31,6 @@ static void	ft_flood_restore(t_game *game)
 				game->map.map[y][x] = 'E';
 			else if (game->map.map[y][x] == 'p')
 				game->map.map[y][x] = 'P';
-			else if (game->map.map[y][x] == 'x')
-				game->map.map[y][x] = 'X';
 			x++;
 		}
 		y++;
@@ -45,8 +43,6 @@ void	ft_flood_fill(char **map, int x, int y, t_verification *pv)
 		map[y][x] = 'o';
 	else if (map[y][x] == 'P')
 		map[y][x] = 'p';
-	else if (map[y][x] == 'X')
-		map[y][x] = 'x';
 	else if (map[y][x] == 'C')
 	{
 		map[y][x] = 'c';
